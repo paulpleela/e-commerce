@@ -1,7 +1,9 @@
 .container {
     display: flex;
+    background-color: white;
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -10,6 +12,8 @@
 
     .links {
         margin-left: auto;
+        display: flex;
+        align-items: center;
         
         .link {
             margin-right: 4rem;
