@@ -14,22 +14,28 @@
         margin-left: auto;
         display: flex;
         align-items: center;
-        
+
         .link {
             margin-right: 4rem;
             color: black;
             text-decoration: none;
+            font-weight: 500;
             
             &:hover {
                 color: var(--primary-color);
+            }
+
+            @media screen and (max-width: 900px) {
+                display: none;
             }
         }
 
         button {
             background-color: transparent;
             border: 0;
+            margin-right: 3rem;
 
-            .basket {
+            .basket, .menu {
                 width: 1.5rem;
                 height: 1.5rem;
                 fill: black;
@@ -39,6 +45,25 @@
                     cursor: pointer;
                 }
             }
+
+            .menu {
+                display: none;
+                @media screen and (max-width: 900px) {
+                    display: block;
+                }
+            }
         }
     }
+}
+
+.backdrop {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 60%;
+    z-index: 2;
 }

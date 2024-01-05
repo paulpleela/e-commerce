@@ -1,0 +1,50 @@
+.cart {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 22rem;
+    height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+    padding: 0.5rem;
+    z-index: 3;
+
+
+    .cartheading {
+        display: flex;
+        
+        button {
+            background-color: transparent;
+            border: 0;
+            margin-right: 3rem;
+            cursor: pointer;
+
+            .close {
+                width: 1.5rem;
+                height: 1.5rem;
+                fill: black;
+                
+                &:hover {
+                    fill: var(--primary-color);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        h3 {
+            letter-spacing: 0.1rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    button {
+        margin: 0 1rem;
+        padding: 0.3rem;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 1.2rem;
+        border: 0;
+    }
+}
