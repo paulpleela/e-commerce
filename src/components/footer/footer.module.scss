@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        > * {
+            margin-top: 1rem;
+        }
+    }
+ 
+}
+
+.icon {
+    fill: black;
+    width: 2rem;
+    height: 2rem;
+
+    &:hover {
+        fill: var(--primary-color);
+        cursor: pointer;
+    }
+}
+
+a.link, button.newsletter {
+    color: black;
+    padding-right: 0.7rem;
+
+    &:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+}
+
+.newsletter {
+    border: 0;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+h3.subheading {
+    margin: 0;
+    
+}
