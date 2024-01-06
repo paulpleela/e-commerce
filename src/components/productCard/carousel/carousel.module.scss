@@ -5,17 +5,6 @@
     display: flex;
     overflow-x: auto;
 
-    .card {
-      border: 1px solid black;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      width: 13rem;
-      height: 17rem;
-      margin: 0.5rem;
-      padding: 0.5rem;
-      flex: 0 0 auto;
-      border-radius: 0.2rem;
-    }
-
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -30,14 +19,5 @@
   h2 {
     margin: 0;
     margin-left: 0.5rem;
-  }
-
-  h3 {
-    margin: 0;
-  }
-
-  h4 {
-    margin: 0;
-    color: var(--primary-color);
   }
 }

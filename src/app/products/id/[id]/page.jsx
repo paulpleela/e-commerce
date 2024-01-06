@@ -1,11 +1,19 @@
 import styles from "./page.module.scss";
 import Image from "next/image";
 import QtySelector from "@/components/cart/qtySelector/QtySelector";
-import Carousel from "@/components/carousel/Carousel";
+import Carousel from "@/components/productCard/carousel/Carousel";
+import CategorySelector from "@/components/categorySelector/CategorySelector";
+import { useParams, notFound } from "next/navigation";
+
+export const metadata = {
+  title: "Charcoal Desk Lamp",
+};
 
 const Product = () => {
+
   return (
     <>
+      <CategorySelector />
       <div className={styles.container}>
         <div className={styles.images}>
           <div className={styles.sideimages}>
