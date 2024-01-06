@@ -19,7 +19,7 @@ const Footer = () => {
         </a>
       </div>
       <div>
-        <h3 className={styles.subheading} >Get informed of our special offers</h3>
+        <h3 className={styles.subheading} >Stay notified of our special offers</h3>
         <form id="newsletterForm">
             <input className={styles.newsletter} type="email" id="email" name="email" placeholder="Your Email" required />
             <button className={styles.newsletter} type="submit">Subscribe</button>

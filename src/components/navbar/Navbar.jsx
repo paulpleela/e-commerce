@@ -4,7 +4,7 @@ import styles from "./navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import Cart from "./cart/Cart";
+import Cart from "../cart/Cart";
 import Sidebar from "./sidebar/Sidebar";
 
 const Navbar = () => {
