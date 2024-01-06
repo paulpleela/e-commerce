@@ -24,14 +24,6 @@ const ProductSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    options:{
-        type: [
-            {
-                name: {type: String, required: true},
-                hex: {type: Number, minlength: 6, maxlength: 6},
-            }
-        ],
-    },
     popular:{
         type: Boolean,
         required: true,
