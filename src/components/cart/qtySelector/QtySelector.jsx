@@ -2,11 +2,21 @@ import styles from "./qtySelector.module.scss";
 
 const qtySelector = () => {
   return (
-    <div className={styles.selector}>
-      <button>-</button>
-      <input type="number" defaultValue={1} />
-      <button>+</button>
-    </div>
+    <table className={styles.selector}>
+      <tbody>
+        <tr>
+          <td>
+            <button className={styles.qty}>-</button>
+          </td>
+          <td>
+            <input type="number" defaultValue={1} />
+          </td>
+          <td>
+            <button className={styles.qty}>+</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 

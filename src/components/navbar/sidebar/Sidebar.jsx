@@ -27,7 +27,7 @@ const Sidebar = ({toggleSidebar}) => {
         </svg>
       </button>
       <Link href="/">Home</Link>
-      <Link href="/products">Products</Link>
+      <Link href="/products/all">Products</Link>
       <Link href="/order">Your Order</Link>
       <Link href="/contact">Contact Us</Link>
     </aside>

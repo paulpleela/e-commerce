@@ -1,4 +1,5 @@
 import styles from "./cart.module.scss";
+import CartCard from "./cartCard/CartCard";
 
 const Cart = ({toggleCart}) => {
   return (
@@ -28,7 +29,16 @@ const Cart = ({toggleCart}) => {
         </button>
         <h3>My Cart</h3>
       </div>
-      <button>CHECK OUT &bull; 0.00 THB</button>
+      <div className={styles.items}>
+        <CartCard />
+        <CartCard />
+        <CartCard />
+        <CartCard />
+        <CartCard />
+        <CartCard />
+        <CartCard />
+      </div>
+      <button className={styles.checkout}>CHECK OUT &bull; 0.00 THB</button>
     </aside>
   );
 };
