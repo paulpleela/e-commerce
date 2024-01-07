@@ -2,13 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 3rem auto;
-  scale: 110%;
+  margin: 2rem auto;
   overflow-x: hidden;
   max-width: 70vw;
-
-  @media screen and (max-width: 700px) {
-    margin: 17rem auto;
-    scale: 130%;
-  }
+  min-height: 80vh;
 }

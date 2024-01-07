@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
+  min-height: 50vh;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
@@ -29,17 +30,16 @@
     .sideimages {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       @media screen and (max-width: 1000px) {
         flex-direction: row;
         order: 2;
       }
 
       .sidenav {
-        border: 1px solid black;
         margin-top: 1rem;
 
         @media screen and (max-width: 1000px) {
+          border: 1px solid black;
           width: 10px;
           height: 10px;
           border-radius: 50%;
@@ -47,11 +47,12 @@
           margin-top: 0;
           margin-bottom: 1rem;
         }
+      }
 
-        .sideimage {
-          @media screen and (max-width: 1000px) {
-            display: none;
-          }
+      .sideimage {
+        border: 1px solid black;
+        @media screen and (max-width: 1000px) {
+          display: none;
         }
       }
     }

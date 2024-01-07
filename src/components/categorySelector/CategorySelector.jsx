@@ -14,7 +14,6 @@ const CategorySelector = () => {
     "chairs",
     "shelves",
     "lighting",
-    "bedding",
     "decor",
   ];
   const [category, setCategory] = useState(null);
