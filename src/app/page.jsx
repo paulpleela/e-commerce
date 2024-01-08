@@ -8,7 +8,6 @@ export default async function Home() {
     popular_products = await getPopularProducts();
   } catch {
     console.error("Error fetching popular products.");
-    notFound();
   }
   return (
     <main>

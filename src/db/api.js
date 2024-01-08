@@ -3,7 +3,7 @@ import { Products, Orders } from "./models";
 
 export const getProducts = async () => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const products = await Products.find();
         return products;
     }
@@ -15,7 +15,7 @@ export const getProducts = async () => {
 
 export const getProductsByCategory = async (category) => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const products = await Products.find({ category });
         return products;
     }
@@ -27,7 +27,7 @@ export const getProductsByCategory = async (category) => {
 
 export const getProductById = async (id) => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const product = await Products.findById(id);
         return product;
     }
@@ -39,7 +39,7 @@ export const getProductById = async (id) => {
 
 export const getPopularProducts = async () => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const products = await Products.find({ popular: true });
         return products;
     }
@@ -52,7 +52,7 @@ export const getPopularProducts = async () => {
 
 export const getOrders = async () => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const orders = await Orders.find();
         return orders;
     }
@@ -64,7 +64,7 @@ export const getOrders = async () => {
 
 export const getOrdersByStatus = async (status) => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const orders = await Orders.find({ status });
         return orders;
     }
@@ -76,7 +76,7 @@ export const getOrdersByStatus = async (status) => {
 
 export const getOrderById = async (id) => {
     try {
-        dbConnect();
+        const db = await dbConnect();
         const order = await Orders.findById(id);
         return order;
     }
