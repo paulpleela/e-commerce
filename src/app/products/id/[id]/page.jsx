@@ -85,6 +85,7 @@ const Product = async ({ params }) => {
                 width={400}
                 height={400}
                 alt={product.title}
+                priority
               />
             ))}
           </div>
