@@ -65,7 +65,11 @@ const CartLayout = ({ toggleCart, products }) => {
           </div>
         )}
       </div>
-      <Link href="/checkout" onClick={toggleCart} className={styles.checkout}>CHECK  OUT</Link>
+      {cart && Object.keys(cart).length != 0 && (
+        <Link href="/checkout" onClick={toggleCart} className={styles.checkout}>
+          CHECK OUT
+        </Link>
+      )}
     </aside>
   );
 };
