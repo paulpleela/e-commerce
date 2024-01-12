@@ -29,7 +29,6 @@ const Sidebar = ({toggleSidebar}) => {
       <Link href="/">Home</Link>
       <Link href="/products/all">Products</Link>
       <Link href="/order">Your Order</Link>
-      <Link href="/contact">Contact Us</Link>
     </aside>
   );
 };

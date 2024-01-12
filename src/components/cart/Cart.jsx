@@ -1,7 +1,18 @@
+"use client";
+
 import styles from "./cart.module.scss";
 import CartCard from "./cartCard/CartCard";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-const Cart = ({toggleCart}) => {
+const CartLayout = ({ toggleCart, products }) => {
+  const [cart, setCart] = useState(null);
+
+  useEffect(() => {
+    setCart({ ...localStorage });
+  }, [toggleCart]);
+
   return (
     <aside className={styles.cart} id="cart">
       <div className={styles.cartheading}>
@@ -30,17 +41,33 @@ const Cart = ({toggleCart}) => {
         <h3>My Cart</h3>
       </div>
       <div className={styles.items}>
-        <CartCard />
-        <CartCard />
-        <CartCard />
-        <CartCard />
-        <CartCard />
-        <CartCard />
-        <CartCard />
+        {cart && products && Object.keys(cart).length != 0 ? (
+          Object.keys(cart).map((product_id) => {
+            return (
+              <CartCard
+                key={product_id}
+                product_id={product_id}
+                product_qty={localStorage.getItem(product_id)}
+                product_info={products[product_id]}
+              />
+            );
+          })
+        ) : (
+          <div className={styles.empty}>
+            <Image
+              src="/images/empty_cart.png"
+              width={250}
+              height={250}
+              alt="Cart is empty. Go shopping."
+              className={styles.img}
+              onClick={toggleCart}
+            />
+          </div>
+        )}
       </div>
-      <button className={styles.checkout}>CHECK OUT &bull; 0.00 THB</button>
+      <Link href="/checkout" onClick={toggleCart} className={styles.checkout}>CHECK  OUT</Link>
     </aside>
   );
 };
 
-export default Cart;
+export default CartLayout;

@@ -7,7 +7,7 @@ import { useState } from "react";
 import Cart from "../cart/Cart";
 import Sidebar from "./sidebar/Sidebar";
 
-const Navbar = () => {
+const Navbar = ({ products }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
 
@@ -26,11 +26,14 @@ const Navbar = () => {
   const toggleCart = () => {
     const cart = document.getElementById("cart");
     const backdrop = document.getElementById("backdrop");
+
+    setCartOpen(!cartOpen);
+
     cartOpen ? (cart.style.display = "none") : (cart.style.display = "flex");
     cartOpen
       ? (backdrop.style.display = "none")
       : (backdrop.style.display = "block");
-    setCartOpen(!cartOpen);
+    ;
   };
 
   const closeSidebars = () => {
@@ -58,10 +61,7 @@ const Navbar = () => {
           <Link href="/order" className={styles.link}>
             Your Order
           </Link>
-          <Link href="/contact" className={styles.link}>
-            Contact Us
-          </Link>
-          <button onClick={toggleCart}>
+          <button onClick={toggleCart} >
             <svg
               className={styles.basket}
               viewBox="0 -20 155 155"
@@ -132,7 +132,7 @@ const Navbar = () => {
         id="backdrop"
       ></div>
       <Sidebar toggleSidebar={toggleSidebar}/>
-      <Cart toggleCart={toggleCart}/>
+      <Cart toggleCart={toggleCart} products={products}/>
     </>
   );
 };

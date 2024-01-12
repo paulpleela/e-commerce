@@ -1,0 +1,78 @@
+.images {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  .sideimages {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1000px) {
+      flex-direction: row;
+      order: 2;
+    }
+
+    .sidenav {
+      margin-top: 1rem;
+
+      @media screen and (max-width: 1000px) {
+        border: 1px solid black;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        &.selected {
+          background-color: black;
+        }
+      }
+    }
+
+    .sideimage {
+      cursor: pointer;
+      border: 1px solid black;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+
+  .mainimage {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 25rem;
+    height: 25rem;
+
+    > * {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: row;
+      order: 1;
+
+      width: 22rem;
+      height: 22rem;
+
+      > * {
+        width: 22rem;
+        height: 22rem;
+      }
+    }
+  }
+}

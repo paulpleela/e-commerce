@@ -1,10 +1,10 @@
 import styles from "./page.module.scss";
-import Image from "next/image";
-import QtySelector from "@/components/cart/qtySelector/QtySelector";
+import AddToCart from "@/components/cart/addToCart/AddToCart";
 import Carousel from "@/components/productCard/carousel/Carousel";
 import CategorySelector from "@/components/categorySelector/CategorySelector";
 import { getProductById, getProductsByCategory, getPopularProducts } from "@/db/api";
 import { notFound } from "next/navigation";
+import ProductImage from "@/components/productImage/ProductImage";
 
 export const generateMetadata = async ({ params }) => {
   const product_id = params.id;
@@ -63,43 +63,14 @@ const Product = async ({ params }) => {
     <>
       <CategorySelector />
       <div className={styles.container}>
-        <div className={styles.images}>
-          <div className={styles.sideimages}>
-            {product.images.map((image, index) => (
-              <div key={index} className={styles.sidenav}>
-                <Image
-                  className={styles.sideimage}
-                  src={`/images/products/${image}`}
-                  width={60}
-                  height={60}
-                  alt={product.title}
-                />
-              </div>
-            ))}
-          </div>
-          <div className={styles.mainimage}>
-            {product.images.map((image, index) => (
-              <Image
-                key={index}
-                src={`/images/products/${image}`}
-                width={400}
-                height={400}
-                alt={product.title}
-                priority
-              />
-            ))}
-          </div>
-        </div>
+        <ProductImage images={product.images} title={products.title}/>
         <div className={styles.info}>
           <h1>{product.title}</h1>
           <h2>{product.price.toFixed(2)} THB</h2>
           <p>{product.description}</p>
-          <div className={styles.buy}>
-            <QtySelector />
-            <button className={styles.cart}>ADD TO CART</button>
+            <AddToCart product_id={product._id.toString()} />
           </div>
         </div>
-      </div>
       <Carousel title="Suggested Products" products={ products } />
     </>
   );

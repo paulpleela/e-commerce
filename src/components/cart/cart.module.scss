@@ -38,13 +38,17 @@
         }
     }
 
-    button.checkout {
+    .checkout {
         margin: 1rem;
         padding: 0.3rem;
         background-color: var(--primary-color);
         color: white;
         font-size: 1.2rem;
         border: 0;
+        cursor: pointer;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        text-align: center;
     }
 
     .items {
@@ -59,6 +63,17 @@
           /* WebKit */
           width: 0;
           height: 0;
+        }
+    }
+
+    .empty {
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .img {
+            cursor: pointer;
         }
     }
 }
