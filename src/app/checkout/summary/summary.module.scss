@@ -1,0 +1,39 @@
+.container {
+  min-height: 95vh;
+}
+
+.tb {
+  border-collapse: collapse;
+  margin: 3rem;
+
+  @media  screen and (max-width: 500px) {
+    margin: 0;
+  }
+}
+
+td.total {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem;
+
+  &_price {
+    @extend .total;
+    text-align: right;
+  }
+}
+
+.row {
+  border-bottom: 1px solid #cacaca;
+  padding: 1rem;
+  padding-right: 2rem;
+
+  &_price {
+    @extend .row;
+    text-align: right;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-right: 5px;
+  }
+}

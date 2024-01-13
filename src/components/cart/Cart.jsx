@@ -4,7 +4,6 @@ import styles from "./cart.module.scss";
 import CartCard from "./cartCard/CartCard";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const CartLayout = ({ toggleCart, products }) => {
   const [cart, setCart] = useState(null);
@@ -66,9 +65,9 @@ const CartLayout = ({ toggleCart, products }) => {
         )}
       </div>
       {cart && Object.keys(cart).length != 0 && (
-        <Link href="/checkout" onClick={toggleCart} className={styles.checkout}>
+        <a href="/checkout" onClick={toggleCart} className={styles.checkout}>
           CHECK OUT
-        </Link>
+        </a>
       )}
     </aside>
   );
