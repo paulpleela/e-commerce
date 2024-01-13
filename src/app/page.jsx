@@ -19,6 +19,7 @@ export default async function Home() {
           width={665}
           height={500}
           alt="Inspirational Room 1"
+          priority
         />
         <div className={styles.subcontainer}>
           <Image
@@ -26,6 +27,7 @@ export default async function Home() {
             width={333}
             height={500}
             alt="Inspirational Room 2"
+            priority
           />
           <div className={styles.welcome}>
             <h1>Discover Style, Embrace Comfort</h1>
