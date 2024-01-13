@@ -63,7 +63,7 @@ const Product = async ({ params }) => {
     <>
       <CategorySelector />
       <div className={styles.container}>
-        <ProductImage images={product.images} title={products.title}/>
+        <ProductImage images={product.images} title={products.title} />
         <div className={styles.info}>
           <h1>{product.title}</h1>
           <h2>{product.price.toFixed(2)} THB</h2>
