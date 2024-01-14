@@ -54,7 +54,7 @@ A comprehensive online shop designed for clean and easy product browsing and ord
 
 ## Getting Started
 
-Follow these steps to set up and run the Homework Calendar web application on your local machine:
+Follow these steps to set up and run the E-commerce web application on your local machine:
 
 
 ### Running Locally in Development Mode
