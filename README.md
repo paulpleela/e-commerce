@@ -9,7 +9,7 @@ A comprehensive online shop designed for clean and easy product browsing and ord
   - [Home Page](#home-page)
   - [Products Page](#products-page)
   - [Product Page](#product-page)
-  - [Cart & Checkout](#cart-&-checkout)
+  - [Cart & Checkout](#cart--checkout)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -97,3 +97,4 @@ Follow these steps to set up and run the Homework Calendar web application on yo
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+**This project is meant solely for learning purposes. All images and icons belong to their respective owners.**
