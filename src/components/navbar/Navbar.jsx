@@ -58,9 +58,6 @@ const Navbar = ({ products }) => {
           <Link href="/products/all" className={styles.link}>
             Products
           </Link>
-          <Link href="/order" className={styles.link}>
-            Your Order
-          </Link>
           <button onClick={toggleCart} >
             <svg
               className={styles.basket}
