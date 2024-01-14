@@ -12,9 +12,7 @@ A comprehensive online shop designed for clean and easy product browsing and ord
   - [Cart & Checkout](#cart--checkout)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
+  - [Running Locally in Development Mode](#running-locally-in-development-mode)
 - [License](#license)
 
 
