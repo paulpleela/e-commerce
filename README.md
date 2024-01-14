@@ -41,7 +41,7 @@ A comprehensive online shop designed for clean and easy product browsing and ord
 
 ### Cart & Checkout
 
-* **Shopping Cart:** Users can view all the products in their cart and edit the quantity or remove a product from the cart.
+* **Shopping Cart:** Users can view all the products in their cart and edit the quantity or remove a product from the cart. This feature is available in the navbar from every page.
 * **Checkout Summary:** Users can view a summary of all the products in their cart and see the total cost.
 ![cart & checkout](https://i.imgur.com/GgZXxKK.png)
 
