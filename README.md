@@ -93,4 +93,4 @@ Follow these steps to set up and run the Homework Calendar web application on yo
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-\**This project is meant solely for learning purposes. All images and icons belong to their respective owners.**
+**This project is meant solely for learning purposes. All images and icons belong to their respective owners.**
