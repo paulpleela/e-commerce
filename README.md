@@ -58,10 +58,6 @@ A comprehensive online shop designed for clean and easy product browsing and ord
 
 Follow these steps to set up and run the Homework Calendar web application on your local machine:
 
-### Prerequisites
-
-- [Python](https://www.python.org/) (version 3.8 or higher)
-- [Pip](https://pip.pypa.io/en/stable/installation/) (Python package installer)
 
 ### Running Locally in Development Mode
 
@@ -97,4 +93,4 @@ Follow these steps to set up and run the Homework Calendar web application on yo
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-**This project is meant solely for learning purposes. All images and icons belong to their respective owners.**
+\**This project is meant solely for learning purposes. All images and icons belong to their respective owners.**
