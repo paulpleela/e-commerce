@@ -8,7 +8,7 @@ export const generateMetadata = async ({ params }) => {
 
   return {
     title: current_category.charAt(0).toUpperCase() + current_category.slice(1),
-    description: `All of our products under the ${current_category} category.`,
+    description: `Explore all of our products under the ${current_category} category.`,
   };
 };
 

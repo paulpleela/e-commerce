@@ -3,7 +3,7 @@ import Summary from "./summary/Summary";
 
 export const metadata = {
   title: "Checkout",
-  description: "Order summary and payment interface",
+  description: "Here is a summary of all the products in your cart.",
 };
 
 const Checkout = ({ products }) => {

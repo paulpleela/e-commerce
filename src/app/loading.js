@@ -2,11 +2,11 @@ import React from 'react';
 
 const Loading = () => {
   const loaderStyle = {
-    border: '16px solid #F3F3F3',
-    borderTop: '16px solid #B90E0A',
+    border: '10px solid #F3F3F3',
+    borderTop: '10px solid #B90E0A',
     borderRadius: '50%',
-    width: '120px',
-    height: '120px',
+    width: '80px',
+    height: '80px',
     animation: 'spin 2s linear infinite',
   };
 
