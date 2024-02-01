@@ -77,6 +77,7 @@ Follow these steps to set up and run the E-commerce web application on your loca
 
     ```bash
     NEXT_PUBLIC_MONGODB_URL=
+    NEXT_PUBLIC_BASE_URL=
     ```
 
 4. Run the application:
