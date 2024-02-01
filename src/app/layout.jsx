@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { getProducts } from "@/db/api";
 import Checkout from "./checkout/page";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default async function RootLayout({ children }) {
         <Navbar products={products_obj}/>
           {children}
            <Checkout products={products_obj}/>
+           <SpeedInsights />
         <Footer />
       </body>
     </html>
