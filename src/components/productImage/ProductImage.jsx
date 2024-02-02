@@ -49,7 +49,7 @@ const ProductImage = ({ images, title }) => {
             width={400}
             height={400}
             alt={title}
-            priority
+            priority={index === 0 ? true : undefined}
           />
         ))}
       </div>
