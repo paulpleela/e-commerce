@@ -3,8 +3,6 @@
 
 A comprehensive online shop designed for clean and easy product browsing and ordering.
 
-> This project is currently hosted at [https://ecom-paulpleela.vercel.app](https://ecom-paulpleela.vercel.app)
-
 - [Features](#features)
   - [Home Page](#home-page)
   - [Products Page](#products-page)
